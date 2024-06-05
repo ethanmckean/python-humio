@@ -62,7 +62,7 @@ class HumioClient(BaseHumioClient):
     """
     A Humio client that gives full access to the underlying API.
     While this client can be used for ingesting data,
-    we recommend using the HumioIngestClient made exclusivly for ingestion.
+    we recommend using the HumioIngestClient made exclusively for ingestion.
     """
 
     def __init__(
