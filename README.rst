@@ -88,7 +88,7 @@ It is mainly used for performing queries, as well as managing different aspects 
   for event in poll_result.events:
       print(event)
 
-  # With a static queryjob you can poll it iterativly until it has been exhausted
+  # With a static queryjob you can poll it iteratively until it has been exhausted
   queryjob = client.create_queryjob("Login Attempt Failed", is_live=False)
   for poll_result in queryjob.poll_until_done():
       print(poll_result.metadata)
